@@ -1,4 +1,6 @@
 def calcul_prix_location(heure_debut, heure_fin):
+heure_debut = int(input("Veuillez entrer l'heure de début de location : "))
+heure_fin = int(input("Veuillez entrer l'heure de fin de location : "))
 
     if heure_debut < 0 or heure_fin > 24:
         print("Les heures doivent être comprises entre 0 et 24 !\n")
@@ -19,8 +21,6 @@ def calcul_prix_location(heure_debut, heure_fin):
     print(f"Le coût de la location est de {prix} euros.")
 
 
-heure_debut = int(input("Veuillez entrer l'heure de début de location : "))
-heure_fin = int(input("Veuillez entrer l'heure de fin de location : "))
 
 
 calcul_prix_location(heure_debut, heure_fin)
